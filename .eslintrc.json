@@ -1,0 +1,73 @@
+{
+  "root": true,
+  "ignorePatterns": ["projects/**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "parserOptions": {
+        "project": ["**/tsconfig.json"],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "airbnb-base",
+        "airbnb-typescript/base"
+      ],
+      "rules": {
+        "@typescript-eslint/no-useless-constructor": 0,
+        "@typescript-eslint/no-empty-function": 0,
+        "class-methods-use-this": "off",
+        "no-unused-vars": "off",
+        // "indent": "off",
+  //   "@typescript-eslint/indent": ["error", 2, {
+  //     "MemberExpression": 1,
+  //     "SwitchCase": 1,
+  //     "IIFEBody": 1,
+  //     "FunctionDeclaration": {
+  //       "parameters": 1,
+  //       "body": 1
+  //     },
+  //     "FunctionExpression": {
+  //       "parameters": 1,
+  //       "body": 1
+  //     },
+  //     "CallExpression": {
+  //       "arguments": 1
+  //     },
+  //     "ArrayExpression": 1, // вложенные массивы будут сдвинуты на 4 пробела относительно своего родителя
+  //     "ObjectExpression": 1
+  //   }
+  // ],
+        "@typescript-eslint/no-unused-vars": "off",
+        "@angular-eslint/component-class-suffix": [
+          "error",
+          {
+            "suffixes": ["Page", "Component"]
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "app",
+            "style": "kebab-case"
+          }
+        ],
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "app",
+            "style": "camelCase"
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.html"],
+      "extends": ["plugin:@angular-eslint/template/recommended"],
+      "rules": {}
+    }
+  ]
+}
