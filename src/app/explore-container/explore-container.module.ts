@@ -10,5 +10,5 @@ import { ExploreContainerComponent } from './explore-container.component';
   imports: [ CommonModule, FormsModule, IonicModule],
   declarations: [ExploreContainerComponent],
   exports: [ExploreContainerComponent]
-})
+  })
 export class ExploreContainerComponentModule {}

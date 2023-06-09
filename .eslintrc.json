@@ -19,26 +19,6 @@
         "@typescript-eslint/no-empty-function": 0,
         "class-methods-use-this": "off",
         "no-unused-vars": "off",
-        // "indent": "off",
-  //   "@typescript-eslint/indent": ["error", 2, {
-  //     "MemberExpression": 1,
-  //     "SwitchCase": 1,
-  //     "IIFEBody": 1,
-  //     "FunctionDeclaration": {
-  //       "parameters": 1,
-  //       "body": 1
-  //     },
-  //     "FunctionExpression": {
-  //       "parameters": 1,
-  //       "body": 1
-  //     },
-  //     "CallExpression": {
-  //       "arguments": 1
-  //     },
-  //     "ArrayExpression": 1, // вложенные массивы будут сдвинуты на 4 пробела относительно своего родителя
-  //     "ObjectExpression": 1
-  //   }
-  // ],
         "@typescript-eslint/no-unused-vars": "off",
         "@angular-eslint/component-class-suffix": [
           "error",

@@ -9,12 +9,12 @@ import { Tab1PageRoutingModule } from './tab1-routing.module';
 
 @NgModule({
   imports: [
-    IonicModule,
-    CommonModule,
-    FormsModule,
-    ExploreContainerComponentModule,
-    Tab1PageRoutingModule
+  IonicModule,
+  CommonModule,
+  FormsModule,
+  ExploreContainerComponentModule,
+  Tab1PageRoutingModule
   ],
   declarations: [Tab1Page]
-})
+  })
 export class Tab1PageModule {}
